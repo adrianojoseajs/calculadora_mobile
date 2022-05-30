@@ -1,0 +1,7 @@
+{
+  "name": "calculadoratabajara",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,178 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-title expand="full"size="large">Calculadora tabajara 2.0</ion-title>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title expand="full" size="large">Calc tabajara 2.0</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <ion-row>
+    <ion-col>
+      <ion-item >
+
+        <ion-label position="stacked" class="valor">{{valor}}</ion-label>
+        
+
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-grid>
+    
+    <ion-row>
+      <ion-col>
+        <ion-button class="potencia" id="potencia"size="large"color="tertiary"shape="round" (click)="PressionaBotao('x²')">
+          <b>&nbsp;x²&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="limpartudo"size="large"color="tertiary" shape="round"(click)="PressionaBotao('C')">
+          <b>&nbsp;&nbsp;C&nbsp;&nbsp;</b>
+
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="limpardigito"size="large" color="tertiary" shape="round"(click)="PressionaBotao('>=|')">
+          <ion-icon name="backspace-outline"></ion-icon>
+        
+        </ion-button>
+        
+      </ion-col>
+
+      <ion-col>
+        <ion-button color="tertiary" size="large"shape="round" (click)="PressionaBotao('/')">
+          <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button id="valor7"size="large"color="primary"shape="round" (click)="PressionaBotao(7)">
+          <b>&nbsp;&nbsp;7&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="valor8"size="large"color="primary" shape="round"(click)="PressionaBotao(8)">
+          <b>&nbsp;&nbsp;8&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="valor9"size="large" color="primary" shape="round"(click)="PressionaBotao(9)">
+          <b>&nbsp;&nbsp;9&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+
+      <ion-col>
+        <ion-button color="tertiary" size="large" shape="round" (click)="PressionaBotao('X')">
+          <b>&nbsp;&nbsp;X&nbsp;&nbsp;</b>
+
+        </ion-button>
+        
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button id="valor4"size="large"color="primary"shape="round" (click)="PressionaBotao(4)">
+          <b>&nbsp;&nbsp;4&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="valor5"size="large"color="primary"shape="round" (click)="PressionaBotao(5)">
+          <b>&nbsp;&nbsp;5&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="valor6"size="large" color="primary" shape="round"(click)="PressionaBotao(6)">
+          <b>&nbsp;&nbsp;6&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+
+      <ion-col>
+        <ion-button color="tertiary"size="large" shape="round" (click)="PressionaBotao('-')">
+          <b>&nbsp;&nbsp;-&nbsp;&nbsp;</b>
+
+        </ion-button>
+        
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button id="valor1"size="large"color="primary"shape="round" (click)="PressionaBotao(1)">
+          <b>&nbsp;&nbsp;1&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="valor2"size="large"color="primary"shape="round" (click)="PressionaBotao(2)">
+          <b>&nbsp;&nbsp;2&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="valor3"size="large" color="primary" shape="round"(click)="PressionaBotao(3)">
+          <b>&nbsp;&nbsp;3&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+
+      <ion-col>
+        <ion-button color="tertiary"size="large" shape="round" (click)="PressionaBotao('+')">
+          <b>&nbsp;&nbsp;+&nbsp;&nbsp;</b>
+ 
+        </ion-button>
+        
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col>
+        <ion-button id="maisoumenos"size="large"color="tertiary" shape="round"(click)="PressionaBotao('+/-')">
+          <b>&nbsp;+/-&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="valor0"size="large"color="primary" shape="round"(click)="PressionaBotao(0)">
+          <b>&nbsp;&nbsp;0&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+      <ion-col>
+        <ion-button id="decimal"size="large" color="tertiary" shape="round"(click)="PressionaBotao(',')">
+          <b>&nbsp;&nbsp;,&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+
+      <ion-col>
+        <ion-button id="resultado"size="large"color="tertiary" shape="round"(click)="PressionaBotao('=')">
+          <b>&nbsp;&nbsp;=&nbsp;&nbsp;</b>
+        </ion-button>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
+  
+
+</ion-content>
